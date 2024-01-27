@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleCloseMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>
@@ -9,24 +16,41 @@ const Navbar = () => {
           <img src="/assets/logo/logo-no-background.png" alt="logo" />
         </Link>
       </div>
-      <ul className={styles.menu}>
+      <div className={styles.mobileMenu} onClick={handleCloseMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul className={mobileMenuOpen ? styles.open : ""}>
         <li className={styles.menuItem}>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={handleCloseMenu}>
+            Home
+          </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link to="/leadership">Leadership</Link>
+          <Link to="/leadership" onClick={handleCloseMenu}>
+            Leadership
+          </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link to="/membership">Membership</Link>
+          <Link to="/membership" onClick={handleCloseMenu}>
+            Membership
+          </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link to="/shows">Shows</Link>
+          <Link to="/shows" onClick={handleCloseMenu}>
+            Shows
+          </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link to="/shop">shop</Link>
+          <Link to="/shop" onClick={handleCloseMenu}>
+            shop
+          </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link to="/contact">Contact Us</Link>
+          <Link to="/contact" onClick={handleCloseMenu}>
+            Contact Us
+          </Link>
         </li>
       </ul>
     </nav>
