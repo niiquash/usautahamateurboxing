@@ -1,0 +1,31 @@
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+.footerImg {
+  width: 6rem;
+  height: 6rem;
+}
+
+.footerImg img {
+  width: 100%;
+}
+
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.footerContact address a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: blue;
+}
