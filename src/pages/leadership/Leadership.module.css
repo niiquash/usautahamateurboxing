@@ -1,0 +1,19 @@
+.leadershipContainer {
+  height: 100vh;
+  padding: 3rem;
+  margin: auto 15rem;
+}
+
+.leadershipContainer h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}

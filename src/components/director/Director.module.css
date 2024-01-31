@@ -1,0 +1,27 @@
+.directorContainer {
+  /* border: 1px solid black; */
+  font-size: 5rem;
+  width: 10rem;
+  text-align: center;
+}
+
+.directorImgContainer {
+  height: 6rem;
+  width: 6rem;
+  margin: 0 auto;
+}
+
+.directorDetails {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.directorImgContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
