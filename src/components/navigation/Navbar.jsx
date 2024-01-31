@@ -52,6 +52,11 @@ const Navbar = () => {
             Contact Us
           </Link>
         </li>
+        <li className={styles.menuItem}>
+          <Link to="/about" onClick={handleCloseMenu}>
+            About
+          </Link>
+        </li>
       </ul>
     </nav>
   );

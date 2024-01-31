@@ -1,0 +1,20 @@
+.aboutContainer {
+  /* height: 100vh; */
+  margin: 3rem 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.aboutDetails h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.aboutDetails p {
+  line-height: 3rem;
+  font-size: 1.75rem;
+}

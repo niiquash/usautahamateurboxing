@@ -1,4 +1,5 @@
 import styles from "./Hero.module.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -12,7 +13,9 @@ const Hero = () => {
         <span className={styles.heroText}>
           Welcome to USA Utah Amateur Boxing
         </span>
-        <span className={styles.heroButton}>Find out more</span>
+        <span className={styles.heroButton}>
+          <Link to="/about">Find out more</Link>
+        </span>
       </div>
     </div>
   );

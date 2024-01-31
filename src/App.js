@@ -7,10 +7,12 @@ import Shows from "./pages/shows/Shows";
 import Shop from "./pages/shop/Shop";
 import Contact from "./pages/contact/Contact";
 import Footer from "./components/footer/Footer";
+import styles from "./App.module.css";
+import About from "./components/about/About";
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.appContainer}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,8 +21,9 @@ function App() {
         <Route path="/shows" element={<Shows />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
